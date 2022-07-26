@@ -4,86 +4,62 @@ title: MATLAB
 permalink: /MATLAB/
 ---
 
-# [function](https://function_link.com) 
+# [moveInset](https://github.com/tulimid1/movingInset/blob/main/moveInset.mlapp) 
 ---
 
-Description. See [function_main.mlx](https://function_main.mlx) for a notebook of given examples. 
+GUI to easily move inset(s) around a figure. See [UsingMoveInset.m](hhttps://github.com/tulimid1/movingInset/blob/main/UsingMoveInset.m) for a script of given examples. 
 
 ## Syntax
 ---
-[outarg = function(inarg1, inarg2)](#a)
-
-[outarg = function(inarg1, inarg2, Name, Value)](#b)
+[moveInset(fig)](#a)
 
 ## Description
 ---
 ### A
-[outarg](#outarg) = function([inarg1](#inarg1), [inarg2](#inarg2)) returns a ... . [example](#example-1)
-
-### B
-[outarg](#outarg) = function([inarg1](#inarg1), [inarg2](#inarg2), [Name, Value)](#name-value-arguments) returns ... with additional options specified by one or more name-value pair arguments. For example, you can do this or that. [example](#example-2)
+moveInset([fig](#fig)) allows one to manipulate the location and size of the axes in [fig](#fig). [example](#example-1)
 
 ## Examples 
 ---
 ### Example 1
-Description
+Adjust the location of an inset. 
 
-    CODE
+    fig = figure();
+    x=linspace(0,2*pi,1e3); 
+    plot(x,sin(x)); 
+    inset = axes('position', [0.5 0.5 0.2 0.2]);
+    plot(inset, x, cos(x));
+
+    moveInset(fig);
+
+    *GUI Interact*
     
-![fig1](/assets/fig1M.png)
+![](/assets/ex1.mov)
     
 ### Example 2
-Description
+Adjust the location of one inset and the size of another. 
 
-    CODE
+    fig = figure();
+    x=linspace(0,2*pi,1e3); 
+    plot(x,sin(x)); 
+    inset = axes('position', [0.5 0.5 0.2 0.2]);
+    plot(inset, x, cos(x));
+    inset = axes('position', [0.2 0.2 0.2 0.2]);
+    plot(inset, x, tan(x));
+
+    moveInset(fig);
+
+    *GUI Interact*
     
-![fig2](/assets/fig2M.png)
+![](/assets/ex2.mov)
 
 ## Input Arguments
 ---
-### ```inarg1```
-Short description
+### ```fig```
+Figure handle. 
 
-Long description
+Figure handle of the figure to have it's axes location and size manipulated.
 
-Data Types: (X, Y)
-
-### ```inarg2```
-Short description
-
-Long description
-
-Data Types: (X, Y)
-
-### Name-Value Arguments
-
-Specified optional comma-separated pairs of ```Name,Value``` arguments. ```Name``` is the is the argument name and ```Value``` is the corresponding value. ```Name``` musta ppear inside single or double quotes. You can specify several name and value pair arguments in any order as ```Name1,Value1,...,NameN,ValueN```. 
-
-**Example**: ```'name1', value1, 'name2', value2``` specifies blah blah blah.
-
-### ```name1```
-Short description (default=X)
-
-Long description
-
-Data Types: (X, Y)
-
-### ```name2```
-Short description (default=X)
-
-Long description
-
-Data Types: (X, Y)
-
-## Output
----
-
-## ```outarg```
-Short description
-
-Long description
-
-Data Types: (X, Y)
+Data Types: (figure handle)
 
 ## More About 
 ---
@@ -91,13 +67,10 @@ Data Types: (X, Y)
 ## Tips 
 ---
 
-I would suggest adding both `function.m` and `functionSignatures.json` to a folder that is in your MATLAB path. The `function.m` contains the function and the `functionSignatures.json` will you give custom suggestions and code completion for when you call `function` in a script or notebook. 
-
-If you already have a `functionSignatures.json` file in your folder, just add the pertinent code to the original `functionSignatures.json`. 
 
 ## Issues and Discussion
 ---
 
-[Issues](https://github.com/tulimid1/TASK/issues) and [Discussion](https://github.com/tulimid1/TASK/discussions).
+[Issues](https://github.com/tulimid1/movingInset/issues) and [Discussion](https://github.com/tulimid1/movingInset/discussions).
 
 If you don't know how to use github (or don't want to), just send me an [email](mailto:tulimid@udel.edu). 
