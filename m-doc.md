@@ -50,7 +50,7 @@ Adjust the location of one inset and the size of another.
 
     *GUI Interact*
     
-![](/assets/ex2.mov)
+![](/assets/ex2.gif)
 
 ## Input Arguments
 ---
