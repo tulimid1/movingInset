@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toolset id="user_apps_toolset" template="false">
+   <tool app_file_path="moveInset.mlapp" handler_class="com.mathworks.deployment.desktop.toolstrip.ToolboxToolSetExtensionHandler" id="efcd22a7-f616-4499-b8e9-59ae17307785:moveInset.mlapp" label="moveInset" quick_access_eligible="false" toolset_id="user_apps_toolset">
+      <callback>moveInset</callback>
+      <summary>Move inset axes to desired position. </summary>
+      <icon filename="matlab_app_generic_icon_24"/>
+      <icon filename="matlab_app_generic_icon_16"/>
+      <parent_tool id="my_apps" toolset_id="apps_toolset"/>
+   </tool>
+</toolset>
