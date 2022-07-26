@@ -33,7 +33,7 @@ Adjust the location of an inset.
 
     *GUI Interact*
     
-![](/assets/ex1.mov)
+![](assets/ex1.mov)
     
 ### Example 2
 Adjust the location of one inset and the size of another. 
