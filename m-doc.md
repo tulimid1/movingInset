@@ -23,8 +23,8 @@ moveInset([fig](#fig)) allows one to manipulate the location and size of the axe
 ### Example 1
 Adjust the location of an inset. 
 
-
-```javascript {data-file="assets/scripts/copyCode.js" data-copyable=true}
+{% include codeHeader.html %}
+```
     fig = figure();
     x=linspace(0,2*pi,1e3); 
     plot(x,sin(x)); 
