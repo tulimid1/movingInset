@@ -24,7 +24,7 @@ moveInset([fig](#fig)) allows one to manipulate the location and size of the axe
 Adjust the location of an inset. 
 
 {% include codeHeader.html %}
-```
+```javascript
     fig = figure();
     x=linspace(0,2*pi,1e3); 
     plot(x,sin(x)); 
