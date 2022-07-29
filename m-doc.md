@@ -41,6 +41,8 @@ Adjust the location of an inset.
 ### Example 2
 Adjust the location of one inset and the size of another. 
 
+{% include codeHeader.html %}
+```matlab
     fig = figure();
     x=linspace(0,2*pi,1e3); 
     plot(x,sin(x)); 
@@ -52,6 +54,7 @@ Adjust the location of one inset and the size of another.
     moveInset(fig);
 
     *GUI Interact*
+```
     
 ![](/assets/ex2.gif)
 
