@@ -23,7 +23,7 @@ moveInset([fig](#fig)) allows one to manipulate the location and size of the axe
 ### Example 1
 Adjust the location of an inset. 
 
-{% include codeHeader.html %}
+
 ```matlab
     fig = figure();
     x=linspace(0,2*pi,1e3); 
@@ -41,7 +41,7 @@ Adjust the location of an inset.
 ### Example 2
 Adjust the location of one inset and the size of another. 
 
-{% include codeHeader.html %}
+
 ```matlab
     fig = figure();
     x=linspace(0,2*pi,1e3); 
