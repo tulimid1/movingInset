@@ -31,7 +31,6 @@ t.succ
 
 {% include code_snippet.md code=code language='ruby' %}
 
-{%- capture code -%}
 ```matlab
     fig = figure();
     x=linspace(0,2*pi,1e3); 
@@ -43,10 +42,6 @@ t.succ
 
     *GUI Interact*
 ```
-
-{%- endcapture -%}
-
-{% include code_snippet.md code=code language='ruby' %}
     
 ![](/assets/ex1.gif)
     
