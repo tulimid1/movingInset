@@ -23,6 +23,15 @@ moveInset([fig](#fig)) allows one to manipulate the location and size of the axe
 ### Example 1
 Adjust the location of an inset. 
 
+{%- capture code -%}
+# Some ruby code
+t = Time.now
+t.succ  
+{%- endcapture -%}
+
+{% include code_snippet.md code=code language='ruby' %}
+
+{%- capture code -%}
 ```matlab
     fig = figure();
     x=linspace(0,2*pi,1e3); 
@@ -34,6 +43,10 @@ Adjust the location of an inset.
 
     *GUI Interact*
 ```
+
+{%- endcapture -%}
+
+{% include code_snippet.md code=code language='ruby' %}
     
 ![](/assets/ex1.gif)
     
