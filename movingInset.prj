@@ -7,7 +7,7 @@
     <param.summary>Easily move an axis inset around a figure.</param.summary>
     <param.description />
     <param.screenshot />
-    <param.version>1.0</param.version>
+    <param.version>1.1</param.version>
     <param.output>${PROJECT_ROOT}/movingInset.mltbx</param.output>
     <param.products.name />
     <param.products.id />
@@ -35,7 +35,18 @@
 %
 **/.git</param.exclude.filters>
     <param.exclude.pcodedmfiles>true</param.exclude.pcodedmfiles>
-    <param.examples />
+    <param.examples>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;examples&gt;
+   &lt;exampleCategory name="movingInset"&gt;
+      &lt;example name="UsingMoveInset" type="html"&gt;
+         &lt;file type="source"&gt;/html/UsingMoveInset.html&lt;/file&gt;
+         &lt;file type="main"&gt;/UsingMoveInset.m&lt;/file&gt;
+         &lt;file type="thumbnail"&gt;/html/UsingMoveInset.png&lt;/file&gt;
+         &lt;file type="image"&gt;/html/UsingMoveInset_01.png&lt;/file&gt;
+         &lt;file type="image"&gt;/html/UsingMoveInset_02.png&lt;/file&gt;
+      &lt;/example&gt;
+   &lt;/exampleCategory&gt;
+&lt;/examples&gt;</param.examples>
     <param.demosxml />
     <param.apps />
     <param.registered.apps>
@@ -66,14 +77,12 @@
       <param.company />
       <param.description />
       <param.screenshot />
-      <param.version />
       <param.output />
       <param.products.name />
       <param.products.id />
       <param.products.version />
       <param.platforms />
       <param.exclude.pcodedmfiles />
-      <param.examples />
       <param.demosxml />
       <param.apps />
       <param.docs />
@@ -106,6 +115,7 @@
       <file>${PROJECT_ROOT}/LICENSE</file>
       <file>${PROJECT_ROOT}/README.md</file>
       <file>${PROJECT_ROOT}/UsingMoveInset.m</file>
+      <file>${PROJECT_ROOT}/demos.xml</file>
       <file>${PROJECT_ROOT}/html</file>
       <file>${PROJECT_ROOT}/moveInset.mlapp</file>
     </fileset.rootfiles>
